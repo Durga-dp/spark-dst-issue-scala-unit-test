@@ -6,5 +6,6 @@ lazy val root = (project in file("."))
   .settings(
     name := "spark-dst-issue-scala-unit-test"
   )
-libraryDependencies += "org.apache.spark" % "spark-sql_2.12" % "3.3.0"
-//libraryDependencies += "org.apache.spark" % "spark-sql_2.11" % "2.4.1"
+//libraryDependencies += "org.apache.spark" %% "spark-sql" % "2.4.4"
+libraryDependencies += "org.apache.spark" %% "spark-sql" % "3.3.1"
+libraryDependencies+="org.scalatest" %% "scalatest" % "3.2.15" % Test
